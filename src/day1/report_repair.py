@@ -33,16 +33,18 @@ def repair_expense_report_s2():
     expense_pairings = dict()
 
     for expense in expenses:
-        expense_pairings[2020 - expense] = expense
-
-    for expense in expenses:
         try:
             other_expense = expense_pairings[expense]
         except KeyError:
-            continue
+            expense_pairings[2020 - expense] = expense
         else:
             return expense * other_expense
 
 
-print(repair_expense_report_s1())
-print(repair_expense_report_s2())
+def main():
+    print(repair_expense_report_s1())
+    print(repair_expense_report_s2())
+
+
+if __name__ == "__main__":
+    main()
