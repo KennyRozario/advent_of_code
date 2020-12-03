@@ -1,5 +1,5 @@
 import pytest
-from src.day1 import report_repair
+from src.day01 import report_repair
 
 
 @pytest.fixture

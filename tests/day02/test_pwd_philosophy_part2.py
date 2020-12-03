@@ -1,5 +1,5 @@
 import pytest
-from src.day2 import pwd_philosophy_part2
+from src.day02 import pwd_philosophy_part2
 
 
 @pytest.fixture
